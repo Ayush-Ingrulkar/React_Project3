@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 70px; /* Adjust this value to match the height of your navbar */
+}
+
+.transparent {
+    background-color: rgba(52, 58, 64, 0.8); /* Semi-transparent grey */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Frosted effect */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.scrolled {
+    background-color: rgba(33, 37, 41, 0.95); /* Darker grey on scroll */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Font and Text Color */
+.navbar .nav-link,
+.navbar .nav-item {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    color: rgba(255, 255, 255, 0.5); /* Off-white text for visibility */
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link.active {
+    color: rgba(255, 255, 255, 0.5); /* Match with other nav links */
+}
+
+.navbar .dropdown-menu {
+    background-color: rgba(33, 37, 41, 0.8); /* Match dropdown background to navbar */
+    border: none;
+    box-shadow: none; /* Remove box-shadow for cleaner look */
+}
+
+.navbar .dropdown-item {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    color: rgba(255, 255, 255, 0.5); /* Off-white text for visibility */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .navbar-brand {
+    color: #c252c0;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover,
+.navbar .dropdown-item:hover {
+    color: #ffc107; /* Gold on hover */
+    background-color: rgba(33, 37, 41, 0.95); /* Darker background on hover */
+}
+
+.navbar .dropdown-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.15); /* Light divider */
+}
+
+/* Disabled Link */
+.navbar .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Search Button */
+.btn-attractive {
+    color: #fff; /* White text */
+    background: linear-gradient(45deg, #f72585, #7209b7); /* Gradient color */
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px; /* Rounded button */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.btn-attractive:hover {
+    background: linear-gradient(45deg, #7209b7, #4361ee); /* Different gradient on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Input Field */
+.form-control {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(33, 37, 41, 0.8); /* Matches navbar background */
+    color: #f8f9fa; /* Text color */
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Lighter placeholder */
+}
