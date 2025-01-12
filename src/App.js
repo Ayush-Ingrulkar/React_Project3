@@ -1,5 +1,5 @@
 import './App.css';
-import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // src/App.js
 import React, { useEffect } from 'react';
 import { UserProvider} from './UserContext';
@@ -20,7 +20,7 @@ import Dashboard from './Components/Dashboard';
 // import Contact from './components/Contact';
 
 const App = () => {
-    <Router basename='/React_Project3'></Router>
+    // <Router basename='/React_Project3'></Router>
 
     useEffect(() => {
         const fetchData = async () => {
